@@ -5,6 +5,6 @@ then
     npm i
     echo "Dependencies installed"    
 fi
-npm start & cd /app && dotnet watch run --urls https://+:5000
+npm run dev & cd /app && dotnet watch run --urls https://+:5000
 #cd /app
 #dotnet watch run --urls https://+:5000

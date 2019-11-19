@@ -18,7 +18,7 @@ ENV DOTNET_USE_POLLING_FILE_WATCHER 1
 
 ENV PATH $PATH:/script
 
-RUN  apt-get update
+RUN apt-get update
 
 RUN apt-get install build-essential libssl-dev -y
 
@@ -31,9 +31,6 @@ RUN dotnet --version
 RUN npm -v
 
 RUN node -v
-
-RUN echo "fs.inotify.max_user_watches=1048576" >> /etc/sysctl.conf
-#RUN sysctl -p --system
 
 EXPOSE 5000
 EXPOSE 49153
